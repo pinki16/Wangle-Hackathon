@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/features"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Features" />
+        <item
+            android:id="@+id/how_to_use"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="How To use" />
+        <item
+            android:id="@+id/about_us"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="About Us" />
+    </group>
+
+    <item android:title="Need Help">
+        <menu>
+            <item
+                android:id="@+id/call"
+                android:icon="@drawable/ic_menu_share"
+                    android:title="Call Us" />
+            <item
+                android:id="@+id/mail"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Email Us" />
+        </menu>
+    </item>
+
+
+
+</menu>

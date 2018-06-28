@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+
+
+
+
+
+        <item
+            android:id="@+id/transported_resources_pc"
+            android:icon="@drawable/ic_track_resources"
+            android:title="Track Resources" />
+        <item
+            android:id="@+id/track"
+            android:icon="@drawable/ic_view_database"
+            android:title="View Available Resources"/>
+        <item
+            android:id="@+id/allocated_pc"
+            android:icon="@drawable/ic_view_database"
+            android:title="View Allocated Resources"/>
+        <item
+            android:id="@+id/allocate_demand_pc"
+            android:icon="@drawable/ic_allocate_demand"
+            android:title="View Demands" />
+        <item
+            android:id="@+id/preempt_pc"
+            android:icon="@drawable/ic_allocate_demand"
+            android:title="Allocate Demand Manually " />
+        <item
+            android:id="@+id/purpose"
+            android:icon="@drawable/ic_allocate_demand"
+            android:title="View Purpose" />
+
+    </group>
+
+    <item android:title="Site Manager">
+        <menu>
+            <item
+                android:id="@+id/nav_create_sm_pc"
+                android:icon="@drawable/ic_create_sm"
+                android:title="Create A New SM Account" />
+            <item
+                android:id="@+id/view_sm_database_pc"
+                android:icon="@drawable/ic_view_sm_database"
+                android:title="View SM Database" />
+        </menu>
+    </item>
+    <item
+        android:id="@+id/nav_guidelines"
+        android:icon="@drawable/ic_guidelines"
+        android:title="GuideLines"/>
+
+
+</menu>

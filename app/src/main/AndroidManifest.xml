@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.jaya.hackthaonproject">
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/wangle"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Splash"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Call" />
+        <activity
+            android:name=".Home"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/title_activity_login"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".PC"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SM"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Features"
+            android:theme="@style/AppTheme.NoActionBars" />
+        <activity
+            android:name=".RegisterSM"
+            android:theme="@style/AppTheme.NoActionBars" />
+        <activity android:name=".SMRegSuccess">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.jaya.hackthaonproject.PC" />
+        </activity>
+        <activity android:name=".SMRegFailure" />
+        <activity
+            android:name=".ShowSM"
+            android:theme="@style/AppTheme.NoActionBars" />
+        <activity
+            android:name=".About"
+            android:theme="@style/AppTheme.NoActionBars" />
+        <activity android:name=".NewDemand" />
+        <activity android:name=".Track">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.jaya.hackthaonproject.PC" />
+        </activity>
+        <activity android:name=".Timeline">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.jaya.hackthaonproject.PC" />
+        </activity>
+        <activity android:name=".ViewDemands">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.jaya.hackthaonproject.PC" />
+        </activity>
+        <activity android:name=".Allocated">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.jaya.hackthaonproject.PC" />
+        </activity>
+        <activity android:name=".Available">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.jaya.hackthaonproject.PC" />
+        </activity>
+        <activity android:name=".ShowDemand">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.jaya.hackthaonproject.PC" />
+        </activity>
+        <activity android:name=".Granted">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.jaya.hackthaonproject.PC" />
+        </activity>
+        <activity android:name=".Free">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.jaya.hackthaonproject.PC" />
+        </activity>
+        <activity android:name=".Manual">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.jaya.hackthaonproject.PC" />
+        </activity>
+        <activity android:name=".Preempt" >
+            <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.jaya.hackthaonproject.PC" />
+            </activity>
+        <activity android:name=".NotRamu" >
+            <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.jaya.hackthaonproject.Manual" />
+            </activity>
+
+        <service android:name=".FCMService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".FCMInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".ResourceEntry" />
+        <activity
+            android:name=".Transport"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".ResLoc" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.jaya.hackthaonproject.Transport" />
+            </activity>
+        <activity android:name=".InTransient" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.jaya.hackthaonproject.Transport" />
+            </activity>
+        <activity android:name=".Purpose"></activity>
+    </application>
+
+</manifest>
